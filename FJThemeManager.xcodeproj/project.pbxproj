@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E00FECF164222D10076DE10 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E00FECE164222D10076DE10 /* FirstViewController.m */; };
+		8E00FED31642444F0076DE10 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E00FED21642444F0076DE10 /* SecondViewController.m */; };
 		8E475358163E26F500D44AF0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E475357163E26F500D44AF0 /* UIKit.framework */; };
 		8E47535A163E26F500D44AF0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E475359163E26F500D44AF0 /* Foundation.framework */; };
 		8E47535C163E26F500D44AF0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E47535B163E26F500D44AF0 /* CoreGraphics.framework */; };
@@ -17,11 +19,17 @@
 		8E47536C163E26F500D44AF0 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E47536B163E26F500D44AF0 /* Default@2x.png */; };
 		8E47536E163E26F500D44AF0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E47536D163E26F500D44AF0 /* Default-568h@2x.png */; };
 		8E475371163E26F500D44AF0 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E47536F163E26F500D44AF0 /* MainStoryboard.storyboard */; };
-		8E475374163E26F500D44AF0 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E475373163E26F500D44AF0 /* MasterViewController.m */; };
-		8E475377163E26F500D44AF0 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E475376163E26F500D44AF0 /* DetailViewController.m */; };
+		8E475380163E287000D44AF0 /* UIView+FJThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E47537F163E287000D44AF0 /* UIView+FJThemeManager.m */; };
+		8E475383163E2B8300D44AF0 /* FJThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E475382163E2B8300D44AF0 /* FJThemeManager.m */; };
+		8E475386163E2B9700D44AF0 /* FJThemeItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E475385163E2B9700D44AF0 /* FJThemeItem.m */; };
+		8E4D7995164789E9000C8FC7 /* theme in Resources */ = {isa = PBXBuildFile; fileRef = 8E4D7994164789E9000C8FC7 /* theme */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8E00FECD164222D10076DE10 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		8E00FECE164222D10076DE10 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = FirstViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		8E00FED11642444F0076DE10 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		8E00FED21642444F0076DE10 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SecondViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		8E475353163E26F500D44AF0 /* FJThemeManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FJThemeManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E475357163E26F500D44AF0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8E475359163E26F500D44AF0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -31,15 +39,18 @@
 		8E475363163E26F500D44AF0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8E475365163E26F500D44AF0 /* FJThemeManager-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FJThemeManager-Prefix.pch"; sourceTree = "<group>"; };
 		8E475366163E26F500D44AF0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		8E475367163E26F500D44AF0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8E475367163E26F500D44AF0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = AppDelegate.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		8E475369163E26F500D44AF0 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		8E47536B163E26F500D44AF0 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		8E47536D163E26F500D44AF0 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		8E475370163E26F500D44AF0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		8E475372163E26F500D44AF0 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
-		8E475373163E26F500D44AF0 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		8E475375163E26F500D44AF0 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		8E475376163E26F500D44AF0 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		8E47537E163E287000D44AF0 /* UIView+FJThemeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FJThemeManager.h"; sourceTree = "<group>"; };
+		8E47537F163E287000D44AF0 /* UIView+FJThemeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FJThemeManager.m"; sourceTree = "<group>"; };
+		8E475381163E2B8300D44AF0 /* FJThemeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = FJThemeManager.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		8E475382163E2B8300D44AF0 /* FJThemeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = FJThemeManager.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		8E475384163E2B9700D44AF0 /* FJThemeItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = FJThemeItem.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		8E475385163E2B9700D44AF0 /* FJThemeItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = FJThemeItem.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		8E4D7994164789E9000C8FC7 /* theme */ = {isa = PBXFileReference; lastKnownFileType = folder; path = theme; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,13 +97,15 @@
 		8E47535D163E26F500D44AF0 /* FJThemeManager */ = {
 			isa = PBXGroup;
 			children = (
+				8E47537D163E282600D44AF0 /* source */,
 				8E475366163E26F500D44AF0 /* AppDelegate.h */,
 				8E475367163E26F500D44AF0 /* AppDelegate.m */,
 				8E47536F163E26F500D44AF0 /* MainStoryboard.storyboard */,
-				8E475372163E26F500D44AF0 /* MasterViewController.h */,
-				8E475373163E26F500D44AF0 /* MasterViewController.m */,
-				8E475375163E26F500D44AF0 /* DetailViewController.h */,
-				8E475376163E26F500D44AF0 /* DetailViewController.m */,
+				8E00FECD164222D10076DE10 /* FirstViewController.h */,
+				8E00FECE164222D10076DE10 /* FirstViewController.m */,
+				8E00FED11642444F0076DE10 /* SecondViewController.h */,
+				8E00FED21642444F0076DE10 /* SecondViewController.m */,
+				8E4D7994164789E9000C8FC7 /* theme */,
 				8E47535E163E26F500D44AF0 /* Supporting Files */,
 			);
 			path = FJThemeManager;
@@ -110,6 +123,19 @@
 				8E47536D163E26F500D44AF0 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8E47537D163E282600D44AF0 /* source */ = {
+			isa = PBXGroup;
+			children = (
+				8E47537E163E287000D44AF0 /* UIView+FJThemeManager.h */,
+				8E47537F163E287000D44AF0 /* UIView+FJThemeManager.m */,
+				8E475381163E2B8300D44AF0 /* FJThemeManager.h */,
+				8E475382163E2B8300D44AF0 /* FJThemeManager.m */,
+				8E475384163E2B9700D44AF0 /* FJThemeItem.h */,
+				8E475385163E2B9700D44AF0 /* FJThemeItem.m */,
+			);
+			name = source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +194,7 @@
 				8E47536C163E26F500D44AF0 /* Default@2x.png in Resources */,
 				8E47536E163E26F500D44AF0 /* Default-568h@2x.png in Resources */,
 				8E475371163E26F500D44AF0 /* MainStoryboard.storyboard in Resources */,
+				8E4D7995164789E9000C8FC7 /* theme in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,8 +207,11 @@
 			files = (
 				8E475364163E26F500D44AF0 /* main.m in Sources */,
 				8E475368163E26F500D44AF0 /* AppDelegate.m in Sources */,
-				8E475374163E26F500D44AF0 /* MasterViewController.m in Sources */,
-				8E475377163E26F500D44AF0 /* DetailViewController.m in Sources */,
+				8E475380163E287000D44AF0 /* UIView+FJThemeManager.m in Sources */,
+				8E475383163E2B8300D44AF0 /* FJThemeManager.m in Sources */,
+				8E475386163E2B9700D44AF0 /* FJThemeItem.m in Sources */,
+				8E00FECF164222D10076DE10 /* FirstViewController.m in Sources */,
+				8E00FED31642444F0076DE10 /* SecondViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,10 +290,14 @@
 		8E47537B163E26F500D44AF0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: nanhong deng (JME7YL5T5V)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FJThemeManager/FJThemeManager-Prefix.pch";
 				INFOPLIST_FILE = "FJThemeManager/FJThemeManager-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "94473DF0-4B94-4A1C-935C-692E3DF7A1A2";
+				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -271,10 +305,14 @@
 		8E47537C163E26F500D44AF0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: nanhong deng (JME7YL5T5V)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FJThemeManager/FJThemeManager-Prefix.pch";
 				INFOPLIST_FILE = "FJThemeManager/FJThemeManager-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "94473DF0-4B94-4A1C-935C-692E3DF7A1A2";
+				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -298,6 +336,7 @@
 				8E47537C163E26F500D44AF0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

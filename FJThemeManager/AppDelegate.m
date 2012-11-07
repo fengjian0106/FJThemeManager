@@ -7,12 +7,58 @@
 //
 
 #import "AppDelegate.h"
+#import "FJThemeManager.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    FJThemeManager *themeManager = [FJThemeManager sharedInstance];
+    if ([themeManager themeItemCount] == 0) {
+        FJThemeItem *item = [[FJThemeItem alloc] init];
+        item.name = @"redTheme";
+        item.color = [UIColor redColor];
+        [themeManager addThemeItem:item];
+        
+        item = [[FJThemeItem alloc] init];
+        item.name = @"greenTheme";
+        item.color = [UIColor greenColor];
+        [themeManager addThemeItem:item];
+        
+        item = [[FJThemeItem alloc] init];
+        item.name = @"blueTheme";
+        item.color = [UIColor blueColor];
+        [themeManager addThemeItem:item];
+        
+        [themeManager setCurrentThemeItemIndex:0 withCompletionBlock:nil];
+        
+        NSLog(@"[themeManager currentThemeItem]=%@", [themeManager currentThemeItem]);
+    } else {
+        //
+    }
+
+    __weak AppDelegate *weakSelf = self;
+    [self.window.rootViewController.view addThemeChangeBlock:^(NSString *name, UIColor *color, UIFont *font, UIColor *fontColor) {
+
+        NSString *themePath = [[[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"theme"]
+                               stringByAppendingPathComponent:name];
+        
+
+        UIImage *gradientImage44 = [[UIImage imageWithContentsOfFile:[themePath stringByAppendingPathComponent:@"navTexture44.png"]]
+                                    resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0)];
+        
+        UIImage *gradientImage32 = [[UIImage imageWithContentsOfFile:[themePath stringByAppendingPathComponent:@"navTexture32.png"]]
+                                    resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0)];
+        
+        
+        [((UINavigationController *)(weakSelf.window.rootViewController)).navigationBar setBackgroundImage:gradientImage44
+                                                                                             forBarMetrics:UIBarMetricsDefault];
+        [((UINavigationController *)(weakSelf.window.rootViewController)).navigationBar setBackgroundImage:gradientImage32
+                                                                                             forBarMetrics:UIBarMetricsLandscapePhone];
+
+    }];
+    
+    
     return YES;
 }
 							
