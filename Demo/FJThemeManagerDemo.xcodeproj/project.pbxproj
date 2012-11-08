@@ -1,0 +1,337 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8E408F4F164BA1DC00B4A340 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E408F4E164BA1DC00B4A340 /* UIKit.framework */; };
+		8E408F51164BA1DC00B4A340 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E408F50164BA1DC00B4A340 /* Foundation.framework */; };
+		8E408F53164BA1DC00B4A340 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E408F52164BA1DC00B4A340 /* CoreGraphics.framework */; };
+		8E408F59164BA1DC00B4A340 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8E408F57164BA1DC00B4A340 /* InfoPlist.strings */; };
+		8E408F5B164BA1DC00B4A340 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E408F5A164BA1DC00B4A340 /* main.m */; };
+		8E408F5F164BA1DC00B4A340 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E408F5E164BA1DC00B4A340 /* AppDelegate.m */; };
+		8E408F61164BA1DC00B4A340 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E408F60164BA1DC00B4A340 /* Default.png */; };
+		8E408F63164BA1DC00B4A340 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E408F62164BA1DC00B4A340 /* Default@2x.png */; };
+		8E408F65164BA1DC00B4A340 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E408F64164BA1DC00B4A340 /* Default-568h@2x.png */; };
+		8E408F80164BA2A900B4A340 /* FJThemeItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E408F7B164BA2A900B4A340 /* FJThemeItem.m */; };
+		8E408F81164BA2A900B4A340 /* FJThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E408F7D164BA2A900B4A340 /* FJThemeManager.m */; };
+		8E408F82164BA2A900B4A340 /* UIView+FJThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E408F7F164BA2A900B4A340 /* UIView+FJThemeManager.m */; };
+		8E408F88164BA41D00B4A340 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E408F85164BA41D00B4A340 /* FirstViewController.m */; };
+		8E408F89164BA41D00B4A340 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E408F87164BA41D00B4A340 /* SecondViewController.m */; };
+		8E408F8E164BA4C700B4A340 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E408F8C164BA4C700B4A340 /* MainStoryboard.storyboard */; };
+		8E408F90164BA4DE00B4A340 /* theme in Resources */ = {isa = PBXBuildFile; fileRef = 8E408F8F164BA4DE00B4A340 /* theme */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8E408F4A164BA1DC00B4A340 /* FJThemeManagerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FJThemeManagerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E408F4E164BA1DC00B4A340 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8E408F50164BA1DC00B4A340 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8E408F52164BA1DC00B4A340 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8E408F56164BA1DC00B4A340 /* FJThemeManagerDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FJThemeManagerDemo-Info.plist"; sourceTree = "<group>"; };
+		8E408F58164BA1DC00B4A340 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8E408F5A164BA1DC00B4A340 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8E408F5C164BA1DC00B4A340 /* FJThemeManagerDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FJThemeManagerDemo-Prefix.pch"; sourceTree = "<group>"; };
+		8E408F5D164BA1DC00B4A340 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8E408F5E164BA1DC00B4A340 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8E408F60164BA1DC00B4A340 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		8E408F62164BA1DC00B4A340 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		8E408F64164BA1DC00B4A340 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		8E408F7A164BA2A900B4A340 /* FJThemeItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJThemeItem.h; sourceTree = "<group>"; };
+		8E408F7B164BA2A900B4A340 /* FJThemeItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJThemeItem.m; sourceTree = "<group>"; };
+		8E408F7C164BA2A900B4A340 /* FJThemeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJThemeManager.h; sourceTree = "<group>"; };
+		8E408F7D164BA2A900B4A340 /* FJThemeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJThemeManager.m; sourceTree = "<group>"; };
+		8E408F7E164BA2A900B4A340 /* UIView+FJThemeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FJThemeManager.h"; sourceTree = "<group>"; };
+		8E408F7F164BA2A900B4A340 /* UIView+FJThemeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FJThemeManager.m"; sourceTree = "<group>"; };
+		8E408F84164BA41D00B4A340 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		8E408F85164BA41D00B4A340 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		8E408F86164BA41D00B4A340 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		8E408F87164BA41D00B4A340 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		8E408F8D164BA4C700B4A340 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		8E408F8F164BA4DE00B4A340 /* theme */ = {isa = PBXFileReference; lastKnownFileType = folder; path = theme; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8E408F47164BA1DC00B4A340 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E408F4F164BA1DC00B4A340 /* UIKit.framework in Frameworks */,
+				8E408F51164BA1DC00B4A340 /* Foundation.framework in Frameworks */,
+				8E408F53164BA1DC00B4A340 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8E408F3F164BA1DC00B4A340 = {
+			isa = PBXGroup;
+			children = (
+				8E408F54164BA1DC00B4A340 /* FJThemeManagerDemo */,
+				8E408F79164BA2A900B4A340 /* FJThemeManager */,
+				8E408F4D164BA1DC00B4A340 /* Frameworks */,
+				8E408F4B164BA1DC00B4A340 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8E408F4B164BA1DC00B4A340 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8E408F4A164BA1DC00B4A340 /* FJThemeManagerDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8E408F4D164BA1DC00B4A340 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8E408F4E164BA1DC00B4A340 /* UIKit.framework */,
+				8E408F50164BA1DC00B4A340 /* Foundation.framework */,
+				8E408F52164BA1DC00B4A340 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8E408F54164BA1DC00B4A340 /* FJThemeManagerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				8E408F5D164BA1DC00B4A340 /* AppDelegate.h */,
+				8E408F5E164BA1DC00B4A340 /* AppDelegate.m */,
+				8E408F8C164BA4C700B4A340 /* MainStoryboard.storyboard */,
+				8E408F84164BA41D00B4A340 /* FirstViewController.h */,
+				8E408F85164BA41D00B4A340 /* FirstViewController.m */,
+				8E408F86164BA41D00B4A340 /* SecondViewController.h */,
+				8E408F87164BA41D00B4A340 /* SecondViewController.m */,
+				8E408F8F164BA4DE00B4A340 /* theme */,
+				8E408F55164BA1DC00B4A340 /* Supporting Files */,
+			);
+			path = FJThemeManagerDemo;
+			sourceTree = "<group>";
+		};
+		8E408F55164BA1DC00B4A340 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8E408F56164BA1DC00B4A340 /* FJThemeManagerDemo-Info.plist */,
+				8E408F57164BA1DC00B4A340 /* InfoPlist.strings */,
+				8E408F5A164BA1DC00B4A340 /* main.m */,
+				8E408F5C164BA1DC00B4A340 /* FJThemeManagerDemo-Prefix.pch */,
+				8E408F60164BA1DC00B4A340 /* Default.png */,
+				8E408F62164BA1DC00B4A340 /* Default@2x.png */,
+				8E408F64164BA1DC00B4A340 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8E408F79164BA2A900B4A340 /* FJThemeManager */ = {
+			isa = PBXGroup;
+			children = (
+				8E408F7A164BA2A900B4A340 /* FJThemeItem.h */,
+				8E408F7B164BA2A900B4A340 /* FJThemeItem.m */,
+				8E408F7C164BA2A900B4A340 /* FJThemeManager.h */,
+				8E408F7D164BA2A900B4A340 /* FJThemeManager.m */,
+				8E408F7E164BA2A900B4A340 /* UIView+FJThemeManager.h */,
+				8E408F7F164BA2A900B4A340 /* UIView+FJThemeManager.m */,
+			);
+			name = FJThemeManager;
+			path = ../FJThemeManager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8E408F49164BA1DC00B4A340 /* FJThemeManagerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E408F6E164BA1DC00B4A340 /* Build configuration list for PBXNativeTarget "FJThemeManagerDemo" */;
+			buildPhases = (
+				8E408F46164BA1DC00B4A340 /* Sources */,
+				8E408F47164BA1DC00B4A340 /* Frameworks */,
+				8E408F48164BA1DC00B4A340 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FJThemeManagerDemo;
+			productName = FJThemeManagerDemo;
+			productReference = 8E408F4A164BA1DC00B4A340 /* FJThemeManagerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8E408F41164BA1DC00B4A340 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = biti;
+			};
+			buildConfigurationList = 8E408F44164BA1DC00B4A340 /* Build configuration list for PBXProject "FJThemeManagerDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8E408F3F164BA1DC00B4A340;
+			productRefGroup = 8E408F4B164BA1DC00B4A340 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8E408F49164BA1DC00B4A340 /* FJThemeManagerDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8E408F48164BA1DC00B4A340 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E408F59164BA1DC00B4A340 /* InfoPlist.strings in Resources */,
+				8E408F61164BA1DC00B4A340 /* Default.png in Resources */,
+				8E408F63164BA1DC00B4A340 /* Default@2x.png in Resources */,
+				8E408F65164BA1DC00B4A340 /* Default-568h@2x.png in Resources */,
+				8E408F8E164BA4C700B4A340 /* MainStoryboard.storyboard in Resources */,
+				8E408F90164BA4DE00B4A340 /* theme in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8E408F46164BA1DC00B4A340 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E408F5B164BA1DC00B4A340 /* main.m in Sources */,
+				8E408F5F164BA1DC00B4A340 /* AppDelegate.m in Sources */,
+				8E408F80164BA2A900B4A340 /* FJThemeItem.m in Sources */,
+				8E408F81164BA2A900B4A340 /* FJThemeManager.m in Sources */,
+				8E408F82164BA2A900B4A340 /* UIView+FJThemeManager.m in Sources */,
+				8E408F88164BA41D00B4A340 /* FirstViewController.m in Sources */,
+				8E408F89164BA41D00B4A340 /* SecondViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8E408F57164BA1DC00B4A340 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E408F58164BA1DC00B4A340 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8E408F8C164BA4C700B4A340 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E408F8D164BA4C700B4A340 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8E408F6C164BA1DC00B4A340 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8E408F6D164BA1DC00B4A340 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8E408F6F164BA1DC00B4A340 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FJThemeManagerDemo/FJThemeManagerDemo-Prefix.pch";
+				INFOPLIST_FILE = "FJThemeManagerDemo/FJThemeManagerDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8E408F70164BA1DC00B4A340 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FJThemeManagerDemo/FJThemeManagerDemo-Prefix.pch";
+				INFOPLIST_FILE = "FJThemeManagerDemo/FJThemeManagerDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8E408F44164BA1DC00B4A340 /* Build configuration list for PBXProject "FJThemeManagerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E408F6C164BA1DC00B4A340 /* Debug */,
+				8E408F6D164BA1DC00B4A340 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E408F6E164BA1DC00B4A340 /* Build configuration list for PBXNativeTarget "FJThemeManagerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E408F6F164BA1DC00B4A340 /* Debug */,
+				8E408F70164BA1DC00B4A340 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8E408F41164BA1DC00B4A340 /* Project object */;
+}
