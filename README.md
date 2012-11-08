@@ -157,12 +157,13 @@ How to use
 
 6 files are required: ` UIView+FJThemeManager.h/.m `, ` FJThemeManager.h/.m ` and `FJThemeItem.h/.m`.
 
-Copy the files into your XCode Project.
+So drag the `FJThemeManager` folder into your project.
 
 And in your code, just `#import "FJThemeManager.h"`
 
 
-## License
+License
+---
 FJThemeManager uses the 2-clause BSD license. So you should be free to use it pretty much however 
 you want.
 
