@@ -1,16 +1,27 @@
 FJThemeManager
 ==============
 
-Every programmer can implement his/her own theme managerment in IOS. Perhaps using delegate, NSNotificationCenter or subclass UIView. But it is too complex for me. So I wrote my own one, and it's super easy to use, just add one line code.
+Every programmer can implement his/her own theme managerment in IOS. Perhaps using delegate, NSNotificationCenter or subclass UIView. But it is too complex for me. So I wrote my own one, and it's super easy to use, just add one line code, as follows
+```  objc
+[self.view addThemeChangeBlock:^(NSString *name, UIColor *color, UIFont *font, UIColor *fontColor) {...};
+```
 
 The key technology is Objective-C runtime func and a Non-Retaining mutable set. 
+
+Screenshot
+---
+![red](https://raw.github.com/fengjian0106/FJThemeManager/master/screenshot/red.png)
+  ![green](https://raw.github.com/fengjian0106/FJThemeManager/master/screenshot/green.png)
+![blue](https://raw.github.com/fengjian0106/FJThemeManager/master/screenshot/blue.png)
+  ![set_and_test](https://raw.github.com/fengjian0106/FJThemeManager/master/screenshot/set_and_test.png)
+
+
 
 
 Example 1: add theme support to UIViewController.view
 ---
 
 ```  objc
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -36,8 +47,6 @@ Example 1: add theme support to UIViewController.view
      }];
     
 }
-
-
 ```
 
 
@@ -45,7 +54,6 @@ Example 2: add theme support to UINavigationController
 ---
 
 ```  objc
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     
@@ -73,16 +81,13 @@ Example 2: add theme support to UINavigationController
     
     return YES;
 }
-
-
-
 ```
+
 
 Example 3: add theme support to UITableViewCell
 ---
 
 ```  objc
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
@@ -98,9 +103,52 @@ Example 3: add theme support to UITableViewCell
     
     return cell;
 }
+```
 
 
+Example 4: add theme to themeManager and set init theme index
+---
 
+```  objc
+FJThemeManager *themeManager = [FJThemeManager sharedInstance];
+    if ([themeManager themeItemCount] == 0) {
+        FJThemeItem *item = [[FJThemeItem alloc] init];
+        item.name = @"redTheme";
+        item.color = [UIColor redColor];
+        [themeManager addThemeItem:item];
+        
+        item = [[FJThemeItem alloc] init];
+        item.name = @"greenTheme";
+        item.color = [UIColor greenColor];
+        [themeManager addThemeItem:item];
+        
+        item = [[FJThemeItem alloc] init];
+        item.name = @"blueTheme";
+        item.color = [UIColor blueColor];
+        [themeManager addThemeItem:item];
+        
+        [themeManager setCurrentThemeItemIndex:0 withCompletionBlock:nil];
+    } else {
+        //
+    }
+```
+
+
+Example 5: change theme
+---
+
+```  objc
+- (IBAction)segmentValueChanged:(id)sender
+{
+    self.hudView.hidden = NO;
+    [self.indicator startAnimating];
+    
+    
+    [[FJThemeManager sharedInstance] setCurrentThemeItemIndex:self.segment.selectedSegmentIndex withCompletionBlock:^(void) {
+        self.hudView.hidden = YES;
+        [self.indicator stopAnimating];
+    }];
+}
 ```
 
 
